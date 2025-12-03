@@ -5,14 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
-    "build":"npx tailwindcss -i ./src/input.css -o ./dist/style.css"
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/styles.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.17",
+    "@tailwindcss/cli": "^4.1.17"
+  },
+  "devDependencies": {
     "tailwindcss": "^4.1.17"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vainqueur123/Website-project.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Vainqueur123/Website-project/issues"
+  },
+  "homepage": "https://github.com/Vainqueur123/Website-project#readme"
 }
