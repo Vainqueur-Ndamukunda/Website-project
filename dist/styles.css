@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-<<<<<<< HEAD
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -28,12 +27,6 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
-=======
-    --color-yellow-500: oklch(79.5% 0.184 86.047);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-pink-500: oklch(65.6% 0.241 354.308);
-    --spacing: 0.25rem;
->>>>>>> ft/footer-page
     --font-weight-bold: 700;
     --tracking-wide: 0.025em;
     --leading-tight: 1.25;
@@ -193,7 +186,6 @@
   }
 }
 @layer utilities {
-<<<<<<< HEAD
   .visible {
     visibility: visible;
   }
@@ -241,19 +233,6 @@
   }
   .ml-40 {
     margin-left: calc(var(--spacing) * 40);
-=======
-  .ml-1 {
-    margin-left: calc(var(--spacing) * 1);
-  }
-  .ml-5 {
-    margin-left: calc(var(--spacing) * 5);
-  }
-  .ml-10 {
-    margin-left: calc(var(--spacing) * 10);
-  }
-  .ml-100 {
-    margin-left: calc(var(--spacing) * 100);
->>>>>>> ft/footer-page
   }
   .flex {
     display: flex;
@@ -261,7 +240,6 @@
   .grid {
     display: grid;
   }
-<<<<<<< HEAD
   .table {
     display: table;
   }
@@ -348,15 +326,10 @@
   }
   .resize {
     resize: both;
-=======
-  .cursor-pointer {
-    cursor: pointer;
->>>>>>> ft/footer-page
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-<<<<<<< HEAD
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -461,31 +434,6 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-=======
-  .flex-col {
-    flex-direction: column;
-  }
-  .justify-end {
-    justify-content: flex-end;
-  }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
-  }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
-  }
-  .bg-pink-500 {
-    background-color: var(--color-pink-500);
-  }
-  .bg-yellow-500 {
-    background-color: var(--color-yellow-500);
-  }
-  .pl-2 {
-    padding-left: calc(var(--spacing) * 2);
->>>>>>> ft/footer-page
   }
   .text-base {
     font-size: var(--text-base);
@@ -527,7 +475,6 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-<<<<<<< HEAD
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
@@ -538,154 +485,6 @@
   }
   .text-green-400 {
     color: var(--color-green-400);
-=======
-  .underline {
-    text-decoration-line: underline;
-  }
-  .sm\:flex-col {
-    @media (width >= 40rem) {
-      flex-direction: column;
-    }
-  }
-  .sm\:flex-col-reverse {
-    @media (width >= 40rem) {
-      flex-direction: column-reverse;
-    }
-  }
-  .sm\:pl-2 {
-    @media (width >= 40rem) {
-      padding-left: calc(var(--spacing) * 2);
-    }
-  }
-  .md\:flex {
-    @media (width >= 48rem) {
-      display: flex;
-    }
-  }
-  .md\:grid-cols-2 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .md\:flex-col {
-    @media (width >= 48rem) {
-      flex-direction: column;
-    }
-  }
-  .md\:flex-col-reverse {
-    @media (width >= 48rem) {
-      flex-direction: column-reverse;
-    }
-  }
-  .md\:items-end {
-    @media (width >= 48rem) {
-      align-items: flex-end;
-    }
-  }
-  .md\:justify-end {
-    @media (width >= 48rem) {
-      justify-content: flex-end;
-    }
-  }
-  .md\:gap-10 {
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 10);
-    }
-  }
-  .md\:gap-15 {
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 15);
-    }
-  }
-  .md\:bg-blue-500 {
-    @media (width >= 48rem) {
-      background-color: var(--color-blue-500);
-    }
-  }
-  .md\:pr-10 {
-    @media (width >= 48rem) {
-      padding-right: calc(var(--spacing) * 10);
-    }
-  }
-  .md\:pl-0 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:pl-10 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 10);
-    }
-  }
-  .md\:pl-15 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 15);
-    }
-  }
-  .md\:pl-22 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 22);
-    }
-  }
-  .md\:pl-25 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 25);
-    }
-  }
-  .md\:pl-30 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 30);
-    }
-  }
-  .md\:pl-40 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 40);
-    }
-  }
-  .lg\:grid-cols-3 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .lg\:gap-8 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 8);
-    }
-  }
-  .lg\:gap-10 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 10);
-    }
-  }
-  .lg\:gap-12 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 12);
-    }
-  }
-  .lg\:pl-0 {
-    @media (width >= 64rem) {
-      padding-left: calc(var(--spacing) * 0);
-    }
-  }
-  .lg\:pl-3 {
-    @media (width >= 64rem) {
-      padding-left: calc(var(--spacing) * 3);
-    }
-  }
-  .md\:lg\:gap-10 {
-    @media (width >= 48rem) {
-      @media (width >= 64rem) {
-        gap: calc(var(--spacing) * 10);
-      }
-    }
-  }
-  .md\:lg\:pl-3 {
-    @media (width >= 48rem) {
-      @media (width >= 64rem) {
-        padding-left: calc(var(--spacing) * 3);
-      }
-    }
->>>>>>> ft/footer-page
   }
   .text-white {
     color: var(--color-white);
