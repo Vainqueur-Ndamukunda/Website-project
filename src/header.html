@@ -1,42 +1,55 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Baumeister</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[#f1eeec] p-5">
 
-    
+    <nav class="relative w-full p-5">
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
 
-    <nav class="flex flex-col items-center space-y-4 p-5 w-auto 
-            md:flex-row md:justify-between md:items-center 
-            lg:grid lg:grid-cols-3 lg:gap-70">
-        <div>
-            <h1>DE <br> EN</h1>
+        <div class="flex items-start justify-between w-full h-10">
+
+            <div class="space-y-1 z-20">
+                <p>DE</p>
+                <p>EN</p>
+            </div>
+
+            <div class="absolute inset-x-0 mx-auto w-fit z-10">
+                <p class="text-3xl font-bold">Baumeister</p>
+            </div>
+
+            <div class="z-20">
+                
+                <div class="lg:hidden">
+                    <label for="menu-toggle" class="cursor-pointer text-4xl">
+                        <span class="inline-block">☰</span>
+                    </label>
+                </div>
+
+                <div class="hidden lg:flex lg:flex-col lg:text-right lg:space-y-1">
+                    <p>About</p>
+                    <p>Services</p>
+                    <p>References</p>
+                    <p>Contact</p>
+                </div>
+                
+            </div>
         </div>
-          <div>
-               <p class="text-3xl font-bold mt-3">Baumeister</p>
-          </div>
 
-   <nav class="p-5 w-full 
-    flex flex-col items-center space-y-4
-    md:flex-row md:justify-between md:items-center md:space-y-0
-    lg:grid lg:grid-cols-3 lg:gap-20">
-
-    
-
-    <div class="flex flex-col text-end space-y-2 w-32 md:w-40 lg:w-full">
-        <p>About</p>
-        <p>Services</p>
-        <p>References</p>
-        <p>Contact</p>
-    </div>
-
-</nav>
-
-
-   
+        <div class="hidden peer-checked:flex peer-checked:lg:hidden 
+                    absolute top-10 right-0 p-4 bg-[#f1eeec] z-10 
+                    flex-col text-right space-y-1 w-fit"> 
+            
+            <p>About</p>
+            <p>Services</p>
+            <p>References</p>
+            <p>Contact</p>
+        </div>
+    </nav>
 
 </body>
 </html>
