@@ -1,154 +1,183 @@
 <html>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
-        </head>
-        <body class="bg-[#f1eeec]">
-
-    <header class="w-full relative z-40  text-green-900">
-    
-    <div class="hidden lg:flex lg:justify-center lg:items-center py-8 px-12 relative h-32">
-        
-        <div class="absolute left-12 top-1/2 transform -translate-y-1/2 
-                    text-sm font-medium leading-tight tracking-tight">
-            <span class="opacity-100">DE</span> <br>
-            <span class="opacity-100">EN</span>
+  </head>
+  <body class="bg-[#f1eeec]">
+    <header class="w-full relative z-40 text-green-900">
+      <div
+        class="hidden lg:flex lg:justify-center lg:items-center py-8 px-12 relative h-32"
+      >
+        <div
+          class="absolute left-12 top-1/2 transform -translate-y-1/2 text-sm font-medium leading-tight tracking-tight"
+        >
+          <span class="opacity-100">DE</span> <br />
+          <span class="opacity-100">EN</span>
         </div>
 
-        <h1 class="text-center text-4xl lg:text-[2.75rem] font-extrabold tracking-tighter">
-            Baumeister
+        <h1
+          class="text-center text-4xl lg:text-[2.75rem] font-extrabold tracking-tighter"
+        >
+          Baumeister
         </h1>
 
-        <nav class="absolute right-12 top-1/2 transform -translate-y-1/2 
-                     text-right text-base font-medium leading-snug space-y-0.5">
-            <a href="#" class="block hover:underline">About</a>
-            <a href="#" class="block hover:underline">Services</a>
-            <a href="#" class="block hover:underline">References</a>
-            <a href="index1.html" class="block hover:underline">Contact</a>
+        <nav
+          class="absolute right-12 top-1/2 transform -translate-y-1/2 text-right text-base font-medium leading-snug space-y-0.5"
+        >
+          <a href="#" class="block hover:underline">About</a>
+          <a href="#" class="block hover:underline">Services</a>
+          <a href="#" class="block hover:underline">References</a>
+          <a href="index1.html" class="block hover:underline">Contact</a>
         </nav>
-    </div>
+      </div>
 
-
-    <nav class="lg:hidden flex justify-between items-center px-6 py-4 border-b border-gray-300">
-        
+      <nav
+        class="lg:hidden flex justify-between items-center px-6 py-4 border-b border-gray-300"
+      >
         <div class="text-sm font-medium leading-tight">
-            <span class="opacity-70">DE</span> <br>
-            <span class="opacity-100">EN</span>
+          <span class="opacity-70">DE</span> <br />
+          <span class="opacity-100">EN</span>
         </div>
 
         <h1 class="text-2xl md:text-4xl font-extrabold tracking-tighter">
-            Baumeister
+          Baumeister
         </h1>
 
         <button id="menuBtn" class="p-2 cursor-pointer">
-            <svg class="w-6 h-6" viewBox="0 0 24 20" stroke="currentColor" fill="none" stroke-width="2.5">
-                <line x1="0" y1="3" x2="24" y2="3" class="stroke-black" />
-                <line x1="0" y1="10" x2="24" y2="10" class="stroke-black" />
-                <line x1="0" y1="17" x2="24" y2="17" class="stroke-black" />
-            </svg>
+          <svg
+            class="w-6 h-6"
+            viewBox="0 0 24 20"
+            stroke="currentColor"
+            fill="none"
+            stroke-width="2.5"
+          >
+            <line x1="0" y1="3" x2="24" y2="3" class="stroke-black" />
+            <line x1="0" y1="10" x2="24" y2="10" class="stroke-black" />
+            <line x1="0" y1="17" x2="24" y2="17" class="stroke-black" />
+          </svg>
         </button>
-    </nav>
+      </nav>
 
-    <div id="mobileMenu" 
-         class="fixed inset-0 bg-[#f1eeec] z-50 transition-transform duration-300 translate-x-full lg:hidden">
-        
-        <div class="flex justify-between items-center px-6 py-4 border-b border-gray-300">
-            <div class="text-sm font-medium leading-tight">
-                <span class="opacity-70">DE</span> <br>
-                <span class="opacity-100">EN</span>
-            </div>
+      <div
+        id="mobileMenu"
+        class="fixed inset-0 bg-[#f1eeec] z-50 transition-transform duration-300 translate-x-full lg:hidden"
+      >
+        <div
+          class="flex justify-between items-center px-6 py-4 border-b border-gray-300"
+        >
+          <div class="text-sm font-medium leading-tight">
+            <span class="opacity-70">DE</span> <br />
+            <span class="opacity-100">EN</span>
+          </div>
 
-            <h1 class="text-2xl md:text-4xl font-extrabold tracking-tighter">
-                Baumeister
-            </h1>
+          <h1 class="text-2xl md:text-4xl font-extrabold tracking-tighter">
+            Baumeister
+          </h1>
 
-            <button id="closeMenuBtn" class="text-xl font-bold p-2 cursor-pointer">
-                X
-            </button>
+          <button
+            id="closeMenuBtn"
+            class="text-xl font-bold p-2 cursor-pointer"
+          >
+            X
+          </button>
         </div>
 
         <div class="relative w-full h-[calc(100vh-56px)] overflow-hidden">
-            
-            <nav class="flex flex-col items-center justify-start h-full pt-16 space-y-10 text-3xl font-semibold z-10 relative">
-                <a href="#about" class="text-green-700 hover:opacity-70">About</a>
-                <a href="#services" class="text-green-700 hover:opacity-70">Services</a>
-                <a href="#references" class="text-green-700 hover:opacity-70">References</a>
-                <a href="#contact" class="text-green-700 hover:opacity-70 py-1 px-4">Contact</a> 
-            </nav>
-            
-            <div class="absolute bottom-0 left-0 w-full h-1/2 bg-[url('/src/assets/colorful-shapes.png')] 
-                        bg-cover bg-center md:bg-bottom opacity-80" aria-hidden="true">
-            </div>
-        </div>
-    </div>
-</header>
-          
-             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 
-             text-green-900  p-8">
+          <nav
+            class="flex flex-col items-center justify-start h-full pt-16 space-y-10 text-3xl font-semibold z-10 relative"
+          >
+            <a href="#about" class="text-green-700 hover:opacity-70">About</a>
+            <a href="#services" class="text-green-700 hover:opacity-70"
+              >Services</a
+            >
+            <a href="#references" class="text-green-700 hover:opacity-70"
+              >References</a
+            >
+            <a href="#contact" class="text-green-700 hover:opacity-70 py-1 px-4"
+              >Contact</a
+            >
+          </nav>
 
-    <div class="text-3xl mt-5 md:mt-10 md:ml-20">
+          <div
+            class="absolute bottom-0 left-0 w-full h-1/2 bg-[url('/src/assets/colorful-shapes.png')] bg-cover bg-center md:bg-bottom opacity-80"
+            aria-hidden="true"
+          ></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-green-900 p-8">
+      <div class="text-3xl mt-5 md:mt-10 md:ml-20">
         <p class="text-2xl font-bold">IMPRINT</p>
 
         <h1>
-            Agentur Baumeister <br>
-            Katrein Baumeister <br>
-            Böckhstraße 13 <br>
-            10967 Berlin
-        </h1><br>
-
-        <h1>
-            +49 (0)30 - 490 827 87 <br>
-            hallo@agentur-baumeister.com
-        </h1><br>
-
-        <h1>
-            UST-IDNR. <br>
-            DE 274 486 923
-        </h1><br>
-
-        <h1>
-            REGISTERED OFFICE <br>
-            Berlin, Deutschland
+          Agentur Baumeister <br />
+          Katrein Baumeister <br />
+          Böckhstraße 13 <br />
+          10967 Berlin
         </h1>
-    </div>
+        <br />
 
-    <div class="mt-10 md:mt-50 text-left md:text-right md:mr-20">
+        <h1>
+          +49 (0)30 - 490 827 87 <br />
+          hallo@agentur-baumeister.com
+        </h1>
+        <br />
+
+        <h1>
+          UST-IDNR. <br />
+          DE 274 486 923
+        </h1>
+        <br />
+
+        <h1>
+          REGISTERED OFFICE <br />
+          Berlin, Deutschland
+        </h1>
+      </div>
+
+      <div class="mt-10 md:mt-50 text-left md:text-right md:mr-20">
         <h1 class="text-xl font-bold">DISCLAIMER</h1>
 
         <p class="text-base leading-relaxed mt-3">
-            Despite all due care, no liability <br>
-            can be accepted for the <br>
-            accuracy, completeness and up <br>
-            to-dateness of the information <br>
-            provided. The same applies to <br>
-            third-party websites to which <br>
-            www.agentur-baumeister.com <br>
-            refers by means of hyperlinks. <br>
-            Katrein Baumeister, Agentur <br>
-            Baumeister accepts no liability <br>
-            for the content of these websites.
+          Despite all due care, no liability <br />
+          can be accepted for the <br />
+          accuracy, completeness and up <br />
+          to-dateness of the information <br />
+          provided. The same applies to <br />
+          third-party websites to which <br />
+          www.agentur-baumeister.com <br />
+          refers by means of hyperlinks. <br />
+          Katrein Baumeister, Agentur <br />
+          Baumeister accepts no liability <br />
+          for the content of these websites.
         </p>
+      </div>
     </div>
-</div>
 
-<div class="flex justify-center md:justify-start">
-    <img src="/src/assets/Vector7.png" class="mt-10 md:mt-20 md:ml-90 w-40 md:w-100">
-</div>
+    <div class="flex justify-center md:justify-start">
+      <img
+        src="/src/assets/Vector7.png"
+        class="mt-10 md:mt-20 md:ml-90 w-40 md:w-100"
+      />
+    </div>
 
-
-<footer class="mt-10 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-bold ml-10 gap-8 text-green-900">
-    <div class="">
+    <footer
+      class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-bold ml-10 gap-8 text-green-900"
+    >
+      <div class="">
         <p class="">Agentur Baumeister</p>
         <p class="">Böckhstraße 13</p>
         <p class="">10967 Berlin</p>
-    </div>
-    <div class="">
-        <a class="underline cursor-pointer md:pl-25 lg:pl-0">hallo@agentur-baumeister.com</a>
+      </div>
+      <div class="">
+        <a class="underline cursor-pointer md:pl-25 lg:pl-0"
+          >hallo@agentur-baumeister.com</a
+        >
         <p class="md:pl-40 lg:pl-0">+49 (0)30 - 490 827 87</p>
-    </div>
-    <div class="flex gap-2 md:gap-15 lg:gap-10">
+      </div>
+      <div class="flex gap-2 md:gap-15 lg:gap-10">
         <div class="">
           <p class="">LinkedIn</p>
         </div>
@@ -156,17 +185,13 @@
           <p class="">Instagram</p>
         </div>
         <div class="flex flex-col">
-            <div class="flex md:flex-col-reverse">
-              <p class="md:pr-10 lg:pl-3">Impressum</p>
-            
-              <p class="pl-2 md:pl-0">Datenschutz</p> 
-            </div>
+          <div class="flex md:flex-col-reverse">
+            <p class="md:pr-10 lg:pl-3">Impressum</p>
+
+            <p class="pl-2 md:pl-0">Datenschutz</p>
+          </div>
         </div>
-    </div>
-</footer>
-
-
-
-             
-        </body>
-        </html>
+      </div>
+    </footer>
+  </body>
+</html>
