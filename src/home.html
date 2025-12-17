@@ -5,24 +5,37 @@
     
 </head>
 <body>
-    <nav class="flex flex-col items-center space-y-4 p-5 w-auto 
-            md:flex-row md:justify-between md:items-center 
-            lg:grid lg:grid-cols-3 lg:gap-70 text-green-700">
-        <div>
-            <h1>DE <br> EN</h1>
+      <div
+        class="flex justify-between items-center px-6 md:px-10 relative h-20 md:h-32"
+      >
+        <div class="text-[11px] md:text-[13px] font-medium leading-tight text-green-700">
+          <div class="font-bold">DE</div>
+          <div class="font-bold">EN</div>
         </div>
-          <div>
-               <p class="text-3xl font-bold mt-3">Baumeister</p>
-          </div>
 
-          
-        <div class="flex flex-col space-y-2 w-40 text-end ml-10 leading-2">
-         <p >About</p> 
-         <p >Services</p>
-         <p>References</p>
-         <p >Contact</p>
+        <div class="absolute left-1/2 transform -translate-x-1/2">
+          <h1 class="text-xl md:text-4xl font-bold tracking-tight text-green-700">
+            Baumeister
+          </h1>
         </div>
-    </nav>
+
+        <nav
+          class="hidden md:block text-right text-[15px] font-medium leading-[1.3] text-green-700"
+        >
+          <a href="#" class="block hover:opacity-60">About</a>
+          <a href="#" class="block hover:opacity-60">Services</a>
+          <a href="#" class="block hover:opacity-60">References</a>
+          <a href="index1.html" class="block hover:opacity-60">Contact</a>
+        </nav>
+
+        <button
+          class="md:hidden bg-black text-white py-2 px-3 rounded-xl flex flex-col gap-1 items-center justify-center"
+        >
+          <span class="w-4 h-0.5 bg-white"></span>
+          <span class="w-4 h-0.5 bg-white"></span>
+          <span class="w-4 h-0.5 bg-white"></span>
+        </button>
+      </div>
  
     <div class="min-h-screen px-4 py-6 sm:px-6 md:px-8 lg:px-12 xl:px-16 text-green-800">
         <div class="max-w-4xl mx-auto bg-white">
@@ -461,13 +474,10 @@
         <div class="">
           <p class="">Instagram</p>
         </div>
-        <div class="flex flex-col">
-            <div class="flex md:flex-col-reverse">
-              <p class="md:pr-10 lg:pl-3">Impressum</p>
-            
-              <p class="pl-2 md:pl-0">Datenschutz</p> 
-            </div>
-        </div>
+        <div class="flex lg:grid md:gap-6">
+        <a href="" class="md:pr-10 lg:pl-3">Impressum</a>
+        <a href="" class="pl-2 md:pl-8">Datenschutz</a> 
+    </div>
     </div>
 </footer>
 
