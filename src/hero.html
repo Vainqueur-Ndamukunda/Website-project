@@ -5,8 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontfamily: {
+              outfit: ['Outfit', 'sans-serif'],
+            },
+          },
+        },
+      }
+     </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="font-[outfit]" >
     <div
       class="bg-[url('/src/assets/Group.png')] bg-cover bg-center w-full h-[350px] sm:h-[450px] md:h-[500px] lg:h-230 flex items-center justify-center px-4 sm:px-10 md:px-20 lg:px-32 mt-6 sm:py-15 md:mt-10 lg:mt-12 text-center relative"
     >
@@ -22,24 +37,10 @@
 </div>
 
 
-<!-- <div
-      class="mt-10 px-6 sm:px-10 md:px-20 lg:px-24 text-left lg:text-left lg:max-w-4xl lg:mx-auto"
-    >
-      <p class="font-semibold text-lg md:text-2xl lg:text-4xl leading-relaxed">
-        We are a Berlin-based communications agency specialising in helping
-        companies and brands find their voice and position themselves. Whether
-        it's brand building, identity sharpening, or communication strategy, we
-        bring a fresh perspective to established structures, develop tailor-
-        made communication solutions, and ensure that messages resonate. With
-        over a decade of experience, we have honed our skills in giving brands
-        their unmistakable identity and making them visible in the long term.
-      </p>
-    </div> -->
-
 
    <div class="bg-[#F2F0EE] min-h-screen flex items-center">
-  <div class=" sm:px-10 md:px-10 lg:px-24 text-left lg:max-w-7xl mx-auto lg:pt-30">
-    <p class="font-normal text-2xl md:text-4xl lg:text-[3.5rem] 
+  <div class=" sm:px-10 md:px-10 lg:px-24 text-left lg:max-w-7xl mx-auto lg:pt-20">
+    <p class="font-normal text-2xl md:text-4xl lg:text-[3rem] 
               tracking-tight text-black max-w-[90%] ">
       We are a Berlin-based communications agency specialising in helping 
       companies and brands find their voice and position themselves. Whether 
@@ -100,7 +101,7 @@
 
     <div class="relative flex h-[420px] w-full items-center 
                 justify-center bg-[url('/src/assets/Vector.png')] 
-                bg-contain bg-center bg-no-repeat md:h-[520px]">
+                bg-contain bg-center bg-no-repeat md:h-[520px] ">
             <p class="max-w-60 text-left text-sm leading-normal 
                     text-white md:text-base">
 
@@ -155,11 +156,12 @@
       </div>
     </div>
 
-    <div>
-      
-    </div>
-
-
+    <div class="flex justify-center items-center mt-10 md:mt-20 px-4">
+  <img 
+    src="src/assets/image.png" 
+    alt="red-paint" 
+    class="w-full max-w-[300px] md:max-w-[450px] lg:max-w-[600px] h-auto object-contain lg:mb-20">
+</div>
 
 </body>
 </html>
